@@ -1,9 +1,7 @@
 ## README.md
 
-# Candidate Name: Goodness Andrew<br>
-# Email: goodnessandrew360@gmail.com <br>
-# Phone: 09024161071<br>
-# Date: 19th May, 2025<br>
+### Candidate Name: Goodness Andrew<br>
+### Date: 19th May, 2025<br>
 
 # DataAnalytics-Assessment - COWRYWISE
 
