@@ -3,7 +3,7 @@
 ### Candidate Name: Goodness Andrew<br>
 ### Date: 19th May, 2025<br>
 
-# DataAnalytics-Assessment - COWRYWISE
+## DataAnalytics-Assessment
 
 **Database file** - `https://drive.google.com/file/d/1__51EvatOK1ubG4oi0Im_VW2UWUChMHu/view?usp=drive_link`
 
@@ -11,7 +11,7 @@ Here is my submission for the SQL Proficiency Assessment. This project includes 
 
 ## Question 1: High-Value Customers with Multiple Products
 
-## Objective
+### Objective
 
 To identify customers who have both a funded savings account and a funded investment plan. Sort by total deposit amount.
 
@@ -37,7 +37,7 @@ Even though the instructions stated that amount fields were in kobo, the resulti
 
 ## Question 2: Transaction Frequency Analysts
 
-## Objective
+### Objective
 
 Segment customers based on how frequently they transact monthly: High (≥10), Medium (3–9), or Low (≤2).
 
@@ -57,20 +57,20 @@ Segment customers based on how frequently they transact monthly: High (≥10), M
 
 - I also ran into a divide-by-zero problem for users who only had one transaction or transacted within the same month. The `PERIOD_DIFF` in those cases returned zero, which obviously caused errors when dividing. I handled that by using `GREATEST(months_active, 1)` so that we’d never divide by zero, and those edge cases wouldn’t break the flow.
 
-# Question 3: Account Inactivity Alert
+## Question 3: Account Inactivity Alert
 
-## Objective
+### Objective
 
 Identify all active accounts (savings or investments) with no inflow in the last 365 days.
 
 ### Approach
 
-*1- For `savings_savingsaccount`: I founded the last deposit date using `MAX(created_on)`
-*2- For `plans_plan`: I used `created_on` date for funded investment plans (`is_a_fund = 1 AND amount > 0`)
-*3- I calculated `DATEDIFF(CURRENT_DATE, last_transaction_date)`
-*4- I finally filtered only accounts with inactivity > 365 days and combined savings + investments with `UNION`
+1. For `savings_savingsaccount`: I founded the last deposit date using `MAX(created_on)`
+2. For `plans_plan`: I used `created_on` date for funded investment plans (`is_a_fund = 1 AND amount > 0`)
+3. I calculated `DATEDIFF(CURRENT_DATE, last_transaction_date)`
+4. I finally filtered only accounts with inactivity > 365 days and combined savings + investments with `UNION`
 
-#### Challenges
+### Challenges
 
 - One thing I wasn’t sure about at first was whether to exclude plans that were marked as `archived` or `deleted`. Just because a plan is archived doesn’t always mean it’s inactive — it might just be hidden in the UI or no longer promoted. Since the instructions didn’t mention filtering those out, I chose to keep them in the results for now to avoid accidentally missing real customers. If the business later defines what “inactive” truly means in this context, that can be updated.
 
@@ -78,7 +78,7 @@ Identify all active accounts (savings or investments) with no inflow in the last
 
 ## Question 4: Customer Lifetime Value (CLV) Estimation
 
-## Objective
+### Objective
 
 Estimate CLV per customer using tenure (in months) and total transaction value. Formula:
 
