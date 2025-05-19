@@ -1,7 +1,7 @@
 ## README.md
 
-Candidate Name: Goodness Andrew
-Email: goodnessandrew360@gmail.com
+Candidate Name: Goodness Andrew<br>
+Email: goodnessandrew360@gmail.com "\n"
 Phone: 09024161071
 Date: 19th May, 2025
 
