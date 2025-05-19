@@ -21,10 +21,10 @@ To identify customers who have both a funded savings account and a funded invest
 
 - One to count and sum deposits from `savings_savingsaccount` (`confirmed_amount > 0`)
 - One to count funded investments from `plans_plan` (`is_a_fund = 1 AND amount > 0`)
-  *2 I joined them with the `users_customuser` table.
-  *3 I used `COALESCE` to replace NULLs for count and sum fields.
-  *4 I converted monetary values from kobo to naira using division by
-  *5 I sorted results by `total_deposits` in descending order.
+*2 I joined them with the `users_customuser` table.
+*3 I used `COALESCE` to replace NULLs for count and sum fields.
+*4 I converted monetary values from kobo to naira using division by
+*5 I sorted results by `total_deposits` in descending order.
 
 #### Challenges
 
