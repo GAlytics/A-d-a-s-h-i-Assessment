@@ -1,9 +1,9 @@
 ## README.md
 
-Candidate Name: Goodness Andrew<br>
-Email: goodnessandrew360@gmail.com "\n"
-Phone: 09024161071
-Date: 19th May, 2025
+#Candidate Name: Goodness Andrew<br>
+#Email: goodnessandrew360@gmail.com <br>
+#Phone: 09024161071<br>
+#Date: 19th May, 2025<br>
 
 # DataAnalytics-Assessment - COWRYWISE
 
@@ -102,7 +102,3 @@ _3- I computed average profit as `total_value _ 0.001`*4- I used`GREATEST(tenure
 - I noticed that some new users who had only just signed up were showing surprisingly high CLVs. Turns out, they had made a lot of transactions in a short time, which caused their monthly average to spike. To keep things fair and avoid divide-by-zero issues, I added a `GREATEST(tenure, 1)` so even users with less than a month of tenure wouldn’t throw off the calculations.
 
 - I also ran into a scaling issue earlier on. My CLV values were way too high. After double-checking the data, I realized I had forgotten to convert `confirmed_amount` from kobo to naira. Once I added the `/ 100` conversion and validated a few examples manually, the results made a lot more sense and matched expected business ranges.
-
-# A-d-a-s-h-i-Assessment
-
-# A-d-a-s-h-i-Assessment
