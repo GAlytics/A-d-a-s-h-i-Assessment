@@ -5,8 +5,6 @@
 
 ## DataAnalytics-Assessment
 
-**Database file** - <a href> https://drive.google.com/file/d/1__51EvatOK1ubG4oi0Im_VW2UWUChMHu/view?usp=drive_link </a>
-
 Here is my submission for the SQL Proficiency Assessment. This project includes a detailed SQL solutions to solve business data problems, focused on customers' savings and investments plan.
 
 ## Question 1: High-Value Customers with Multiple Products
